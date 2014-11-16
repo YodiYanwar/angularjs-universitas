@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Script orang lain -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+	
+
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+<body ng-app="univ">
+
+	<div class="bs-example">
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        	<a href="#" class="navbar-brand">Belajar AngularJS & Bootstrap</a>
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                <li><a href="#mahasiswa"><i class="fa fa-mortar-board fa-lg"></i> Mahasiswa</a></li>
+       			<li><a href="#about"><i class="fa fa-shield fa-lg"></i> Tentang</a></li>
+        		<li><a href="#contact"><i class="fa fa-comment fa-lg"></i> Kontak</a></li>
+            </ul>
+        </div>
+     </div>
+    </nav>
+</div>
+
+	    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    	<div ng-view></div>
+	
+
+	
+
+	<!-- Script buatan Sendiri -->
+	<script type="text/javascript" src="js/controllers.js"></script>
+</body>
+</html>
